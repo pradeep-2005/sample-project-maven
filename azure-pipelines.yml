@@ -10,5 +10,5 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'clean test'
+    goals: 'mvn test'
     options: '-Dsurefire.suiteXmlFiles=regression-tests.xml' # Optional, if using test suites
